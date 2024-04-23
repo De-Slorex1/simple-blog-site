@@ -1,0 +1,30 @@
+<%- include('../includes/head.ejs') %>
+<body>
+    <div class="container">
+        <%- include('../includes/navigation.ejs') %>
+        <div class="form-container">
+            <h2>Product Description</h2>
+            <form action="product" method="POST">
+                <div>
+                    <label for="title">Shoe Brand:</label><br>
+                    <input type="text" class="input" name="title" id="title" placeholder="Add title"/><br>
+                    
+                 </div>
+                 <div>
+                    <label for="imageURL">Shoe Image URL:</label><br>
+                    <input type="text" class="input" name="imageURL" id="imageURL" placeholder="Add Image URL"/><br>
+                 </div>
+                 <div>
+                    <label for="price">Shoe Price:</label><br>
+                    <input type="number" class="input" name="price" id="price" step="0.01" placeholder="Add Price"/><br>
+                 </div>
+                 <div>
+                    <label for="desc">Description:</label><br>
+                    <textarea name="desc" id="desc" class="desc" rows="5" cols="53" placeholder="Add Description"></textarea>
+                 </div>
+                 <button class="btns" type="submit">Add Product</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
